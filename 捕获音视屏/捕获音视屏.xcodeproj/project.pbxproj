@@ -324,6 +324,7 @@
 				352D17F11DBDED960044E6AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
