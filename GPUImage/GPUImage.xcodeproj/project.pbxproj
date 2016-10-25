@@ -19,6 +19,7 @@
 		358198001DBF45D100A83A17 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358197FF1DBF45D100A83A17 /* OpenGLES.framework */; };
 		358198021DBF45DE00A83A17 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358198011DBF45DE00A83A17 /* CoreVideo.framework */; };
 		358198041DBF45E800A83A17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358198031DBF45E800A83A17 /* QuartzCore.framework */; };
+		358198071DBF62AA00A83A17 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358198061DBF62AA00A83A17 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		358197FF1DBF45D100A83A17 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		358198011DBF45DE00A83A17 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		358198031DBF45E800A83A17 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		358198051DBF62AA00A83A17 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		358198061DBF62AA00A83A17 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		4636A5ED81A37877969E10D0 /* libPods-GPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD54C786CAC4D5BBDA22333 /* Pods-GPUImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImage/Pods-GPUImage.debug.xcconfig"; sourceTree = "<group>"; };
 		DAB7151A731DF7EE283E0679 /* Pods-GPUImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImage/Pods-GPUImage.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				358197F11DBF44D100A83A17 /* LaunchScreen.storyboard */,
 				358197F41DBF44D100A83A17 /* Info.plist */,
 				358197E31DBF44D100A83A17 /* Supporting Files */,
+				358198051DBF62AA00A83A17 /* TableViewController.h */,
+				358198061DBF62AA00A83A17 /* TableViewController.m */,
 			);
 			path = GPUImage;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				358197EB1DBF44D100A83A17 /* ViewController.m in Sources */,
 				358197E81DBF44D100A83A17 /* AppDelegate.m in Sources */,
 				358197E51DBF44D100A83A17 /* main.m in Sources */,
+				358198071DBF62AA00A83A17 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
