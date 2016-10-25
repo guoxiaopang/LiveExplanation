@@ -9,6 +9,7 @@
 #import "ImageViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <Photos/Photos.h>
+#import "NSObject+HUD.h"
 
 @interface ImageViewController ()
 
@@ -63,14 +64,14 @@
             } completionHandler:^(BOOL success, NSError * _Nullable error) {
                 if (success)
                 {
-                    NSLog(@"保存完成");
+                   [self showInfo:@"保存完成,第一张也许是黑色的，多拍几张"];
                 }
                 
             }];
         }else
         {
             // 没有访问相册权限
-            NSLog(@"没有相册访问权限");
+            [self showInfo:@"没有相册访问权限"];
         }
     }];
     

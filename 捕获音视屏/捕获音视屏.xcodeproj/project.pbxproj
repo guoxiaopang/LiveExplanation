@@ -16,6 +16,8 @@
 		352D17F41DBDEDBA0044E6AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352D17F31DBDEDBA0044E6AC /* AVFoundation.framework */; };
 		358197AA1DBEF1B000A83A17 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197A91DBEF1B000A83A17 /* TableViewController.m */; };
 		358197AD1DBEF2BD00A83A17 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197AC1DBEF2BD00A83A17 /* ImageViewController.m */; };
+		358197B01DBF001000A83A17 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197AF1DBF001000A83A17 /* VideoViewController.m */; };
+		358197B31DBF00D300A83A17 /* NSObject+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197B21DBF00D300A83A17 /* NSObject+HUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		358197A91DBEF1B000A83A17 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		358197AB1DBEF2BD00A83A17 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		358197AC1DBEF2BD00A83A17 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		358197AE1DBF001000A83A17 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		358197AF1DBF001000A83A17 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		358197B11DBF00D300A83A17 /* NSObject+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HUD.h"; sourceTree = "<group>"; };
+		358197B21DBF00D300A83A17 /* NSObject+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 				358197A91DBEF1B000A83A17 /* TableViewController.m */,
 				358197AB1DBEF2BD00A83A17 /* ImageViewController.h */,
 				358197AC1DBEF2BD00A83A17 /* ImageViewController.m */,
+				358197AE1DBF001000A83A17 /* VideoViewController.h */,
+				358197AF1DBF001000A83A17 /* VideoViewController.m */,
+				358197B11DBF00D300A83A17 /* NSObject+HUD.h */,
+				358197B21DBF00D300A83A17 /* NSObject+HUD.m */,
 			);
 			path = "捕获音视屏";
 			sourceTree = "<group>";
@@ -174,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				358197AD1DBEF2BD00A83A17 /* ImageViewController.m in Sources */,
+				358197B31DBF00D300A83A17 /* NSObject+HUD.m in Sources */,
 				352D17E31DBDED960044E6AC /* ViewController.m in Sources */,
+				358197B01DBF001000A83A17 /* VideoViewController.m in Sources */,
 				352D17E01DBDED960044E6AC /* AppDelegate.m in Sources */,
 				352D17DD1DBDED960044E6AC /* main.m in Sources */,
 				358197AA1DBEF1B000A83A17 /* TableViewController.m in Sources */,

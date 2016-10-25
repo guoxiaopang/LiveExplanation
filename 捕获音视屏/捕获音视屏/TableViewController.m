@@ -11,6 +11,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Photos/Photos.h>
 #import "ViewController.h"
+#import "VideoViewController.h"
+#import "NSObject+HUD.h"
 
 @interface TableViewController ()
 
@@ -66,6 +68,10 @@ static NSString *ident = @"ident";
     {
         ViewController *controller = [[ViewController alloc] init];
         [self.navigationController pushViewController:controller animated:YES];
+    }else if (indexPath.row == 2)
+    {
+        VideoViewController *controller = [[VideoViewController alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
     }
 
 }
@@ -75,14 +81,14 @@ static NSString *ident = @"ident";
 {
     if(![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
     {
-        NSLog(@"您的设备没有摄像头或者相关的驱动, 不能进行直播");
+        [self showInfo:@"您的设备没有摄像头或者相关的驱动, 不能进行直播"];
     }
     
     // 判断是否有摄像头权限
     AVAuthorizationStatus  authorizationStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     if (authorizationStatus == AVAuthorizationStatusRestricted|| authorizationStatus == AVAuthorizationStatusDenied)
     {
-        NSLog(@"app需要访问您的摄像头。\\n请启用摄像头-设置/隐私/摄像头");
+        [self showInfo:@"app需要访问您的摄像头。\\n请启用摄像头-设置/隐私/摄像头"];
     }
     
     // 开启麦克风权限
@@ -96,7 +102,7 @@ static NSString *ident = @"ident";
              }
              else
              {
-                 NSLog(@"app需要访问您的麦克风。\\n请启用麦克风-设置/隐私/麦克风");
+                 [self showInfo:@"app需要访问您的麦克风。\\n请启用麦克风-设置/隐私/麦克风"];
                  return NO;
              }
          }];
@@ -113,8 +119,6 @@ static NSString *ident = @"ident";
             
         }];
     }
-    
-    
     
 }
 
