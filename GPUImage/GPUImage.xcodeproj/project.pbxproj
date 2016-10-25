@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308E9BD054B1A12A0A6638E7 /* libPods-GPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4636A5ED81A37877969E10D0 /* libPods-GPUImage.a */; };
 		358197E51DBF44D100A83A17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197E41DBF44D100A83A17 /* main.m */; };
 		358197E81DBF44D100A83A17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197E71DBF44D100A83A17 /* AppDelegate.m */; };
 		358197EB1DBF44D100A83A17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197EA1DBF44D100A83A17 /* ViewController.m */; };
 		358197EE1DBF44D100A83A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358197EC1DBF44D100A83A17 /* Main.storyboard */; };
 		358197F01DBF44D100A83A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358197EF1DBF44D100A83A17 /* Assets.xcassets */; };
 		358197F31DBF44D100A83A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358197F11DBF44D100A83A17 /* LaunchScreen.storyboard */; };
+		358197FC1DBF45BC00A83A17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358197FB1DBF45BC00A83A17 /* AVFoundation.framework */; };
+		358197FE1DBF45C700A83A17 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358197FD1DBF45C700A83A17 /* CoreMedia.framework */; };
+		358198001DBF45D100A83A17 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358197FF1DBF45D100A83A17 /* OpenGLES.framework */; };
+		358198021DBF45DE00A83A17 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358198011DBF45DE00A83A17 /* CoreVideo.framework */; };
+		358198041DBF45E800A83A17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358198031DBF45E800A83A17 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,14 @@
 		358197EF1DBF44D100A83A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		358197F21DBF44D100A83A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358197F41DBF44D100A83A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		358197FB1DBF45BC00A83A17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		358197FD1DBF45C700A83A17 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		358197FF1DBF45D100A83A17 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		358198011DBF45DE00A83A17 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		358198031DBF45E800A83A17 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4636A5ED81A37877969E10D0 /* libPods-GPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD54C786CAC4D5BBDA22333 /* Pods-GPUImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImage/Pods-GPUImage.debug.xcconfig"; sourceTree = "<group>"; };
+		DAB7151A731DF7EE283E0679 /* Pods-GPUImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImage/Pods-GPUImage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358198041DBF45E800A83A17 /* QuartzCore.framework in Frameworks */,
+				358198021DBF45DE00A83A17 /* CoreVideo.framework in Frameworks */,
+				358198001DBF45D100A83A17 /* OpenGLES.framework in Frameworks */,
+				358197FE1DBF45C700A83A17 /* CoreMedia.framework in Frameworks */,
+				358197FC1DBF45BC00A83A17 /* AVFoundation.framework in Frameworks */,
+				308E9BD054B1A12A0A6638E7 /* libPods-GPUImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +64,8 @@
 			children = (
 				358197E21DBF44D100A83A17 /* GPUImage */,
 				358197E11DBF44D100A83A17 /* Products */,
+				358197FA1DBF45BC00A83A17 /* Frameworks */,
+				E50FCB04015279732DF29DD7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +101,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		358197FA1DBF45BC00A83A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				358198031DBF45E800A83A17 /* QuartzCore.framework */,
+				358198011DBF45DE00A83A17 /* CoreVideo.framework */,
+				358197FF1DBF45D100A83A17 /* OpenGLES.framework */,
+				358197FD1DBF45C700A83A17 /* CoreMedia.framework */,
+				358197FB1DBF45BC00A83A17 /* AVFoundation.framework */,
+				4636A5ED81A37877969E10D0 /* libPods-GPUImage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E50FCB04015279732DF29DD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DD54C786CAC4D5BBDA22333 /* Pods-GPUImage.debug.xcconfig */,
+				DAB7151A731DF7EE283E0679 /* Pods-GPUImage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 358197F71DBF44D100A83A17 /* Build configuration list for PBXNativeTarget "GPUImage" */;
 			buildPhases = (
+				E1E44940BA8541CD454EFE2D /* [CP] Check Pods Manifest.lock */,
 				358197DC1DBF44D100A83A17 /* Sources */,
 				358197DD1DBF44D100A83A17 /* Frameworks */,
 				358197DE1DBF44D100A83A17 /* Resources */,
+				9BF5BE246DFBE3E1CDC2AE26 /* [CP] Embed Pods Frameworks */,
+				7D6EF5D013EE27710504C46F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +192,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D6EF5D013EE27710504C46F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPUImage/Pods-GPUImage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BF5BE246DFBE3E1CDC2AE26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPUImage/Pods-GPUImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E44940BA8541CD454EFE2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		358197DC1DBF44D100A83A17 /* Sources */ = {
@@ -269,6 +364,7 @@
 		};
 		358197F81DBF44D100A83A17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD54C786CAC4D5BBDA22333 /* Pods-GPUImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K786QX52SJ;
@@ -281,6 +377,7 @@
 		};
 		358197F91DBF44D100A83A17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB7151A731DF7EE283E0679 /* Pods-GPUImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K786QX52SJ;
@@ -310,6 +407,7 @@
 				358197F91DBF44D100A83A17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
