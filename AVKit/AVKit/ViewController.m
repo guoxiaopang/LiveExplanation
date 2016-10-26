@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
 
@@ -14,16 +16,21 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"1.mp4" ofType:nil];
+  //  NSURL *urlStr = [NSURL URLWithString:@"rtmp://localhost:1935/rtmplive/room"];
+    NSURL *urlStr = [NSURL fileURLWithPath:path];
+    AVPlayerViewController *controller = [[AVPlayerViewController alloc] init];
+    controller.view.frame = self.view.frame;
+    controller.player = [AVPlayer playerWithURL:urlStr];
+    [self.view addSubview:controller.view];
+    [controller.player play];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

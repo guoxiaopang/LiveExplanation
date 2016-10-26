@@ -13,6 +13,9 @@
 		351E04DE1DC0A4F400364AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351E04DC1DC0A4F400364AE6 /* Main.storyboard */; };
 		351E04E01DC0A4F400364AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351E04DF1DC0A4F400364AE6 /* Assets.xcassets */; };
 		351E04E31DC0A4F400364AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351E04E11DC0A4F400364AE6 /* LaunchScreen.storyboard */; };
+		351E04EC1DC0AE5E00364AE6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351E04EB1DC0AE5E00364AE6 /* AVKit.framework */; };
+		351E04EE1DC0AEF500364AE6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351E04ED1DC0AEF500364AE6 /* AVFoundation.framework */; };
+		351E04F01DC0AF7E00364AE6 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 351E04EF1DC0AF7E00364AE6 /* 1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		351E04DF1DC0A4F400364AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		351E04E21DC0A4F400364AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		351E04E41DC0A4F400364AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351E04EB1DC0AE5E00364AE6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		351E04ED1DC0AEF500364AE6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		351E04EF1DC0AF7E00364AE6 /* 1.mp4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351E04EE1DC0AEF500364AE6 /* AVFoundation.framework in Frameworks */,
+				351E04EC1DC0AE5E00364AE6 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,7 @@
 			children = (
 				351E04D21DC0A4F400364AE6 /* AVKit */,
 				351E04D11DC0A4F400364AE6 /* Products */,
+				351E04EA1DC0AE5E00364AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +83,19 @@
 		351E04D31DC0A4F400364AE6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				351E04EF1DC0AF7E00364AE6 /* 1.mp4 */,
 				351E04D41DC0A4F400364AE6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		351E04EA1DC0AE5E00364AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				351E04ED1DC0AEF500364AE6 /* AVFoundation.framework */,
+				351E04EB1DC0AE5E00364AE6 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				351E04E31DC0A4F400364AE6 /* LaunchScreen.storyboard in Resources */,
+				351E04F01DC0AF7E00364AE6 /* 1.mp4 in Resources */,
 				351E04E01DC0A4F400364AE6 /* Assets.xcassets in Resources */,
 				351E04DE1DC0A4F400364AE6 /* Main.storyboard in Resources */,
 			);
