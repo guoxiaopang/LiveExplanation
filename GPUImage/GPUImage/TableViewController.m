@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "PicViewController.h"
+#import "GPUImageVideoCameraViewController.h"
 
 @interface TableViewController ()
 
@@ -47,8 +48,13 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 1)
     {
-        PicViewController *controllrt = [[PicViewController alloc] init];
-        [self.navigationController pushViewController:controllrt animated:YES];
+        PicViewController *controller = [[PicViewController alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    else if (indexPath.row == 0)
+    {
+        GPUImageVideoCameraViewController *controller = [[GPUImageVideoCameraViewController alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
     }
 }
 
