@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "PicViewController.h"
 
 @interface TableViewController ()
 
@@ -44,6 +45,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == 1)
+    {
+        PicViewController *controllrt = [[PicViewController alloc] init];
+        [self.navigationController pushViewController:controllrt animated:YES];
+    }
 }
 
 
