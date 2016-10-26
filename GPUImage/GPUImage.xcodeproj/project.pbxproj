@@ -10,6 +10,7 @@
 		308E9BD054B1A12A0A6638E7 /* libPods-GPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4636A5ED81A37877969E10D0 /* libPods-GPUImage.a */; };
 		351E04BF1DC0403500364AE6 /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E04BE1DC0403500364AE6 /* PicViewController.m */; };
 		351E04C21DC0468C00364AE6 /* GPUImageVideoCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E04C11DC0468C00364AE6 /* GPUImageVideoCameraViewController.m */; };
+		351E04C51DC05C3400364AE6 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E04C41DC05C3400364AE6 /* GPUImageBeautifyFilter.m */; };
 		358197E51DBF44D100A83A17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197E41DBF44D100A83A17 /* main.m */; };
 		358197E81DBF44D100A83A17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197E71DBF44D100A83A17 /* AppDelegate.m */; };
 		358197EB1DBF44D100A83A17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358197EA1DBF44D100A83A17 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 		351E04BE1DC0403500364AE6 /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
 		351E04C01DC0468C00364AE6 /* GPUImageVideoCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageVideoCameraViewController.h; sourceTree = "<group>"; };
 		351E04C11DC0468C00364AE6 /* GPUImageVideoCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageVideoCameraViewController.m; sourceTree = "<group>"; };
+		351E04C31DC05C3400364AE6 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		351E04C41DC05C3400364AE6 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		358197E01DBF44D100A83A17 /* GPUImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358197E41DBF44D100A83A17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		358197E61DBF44D100A83A17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 		358197E21DBF44D100A83A17 /* GPUImage */ = {
 			isa = PBXGroup;
 			children = (
+				351E04C31DC05C3400364AE6 /* GPUImageBeautifyFilter.h */,
+				351E04C41DC05C3400364AE6 /* GPUImageBeautifyFilter.m */,
 				358197E61DBF44D100A83A17 /* AppDelegate.h */,
 				358197E71DBF44D100A83A17 /* AppDelegate.m */,
 				358197E91DBF44D100A83A17 /* ViewController.h */,
@@ -264,6 +269,7 @@
 				351E04BF1DC0403500364AE6 /* PicViewController.m in Sources */,
 				358197EB1DBF44D100A83A17 /* ViewController.m in Sources */,
 				358197E81DBF44D100A83A17 /* AppDelegate.m in Sources */,
+				351E04C51DC05C3400364AE6 /* GPUImageBeautifyFilter.m in Sources */,
 				358197E51DBF44D100A83A17 /* main.m in Sources */,
 				351E04C21DC0468C00364AE6 /* GPUImageVideoCameraViewController.m in Sources */,
 				358198071DBF62AA00A83A17 /* TableViewController.m in Sources */,

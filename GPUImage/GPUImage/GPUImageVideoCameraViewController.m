@@ -8,13 +8,14 @@
 
 #import "GPUImageVideoCameraViewController.h"
 #import "GPUImage.h"
+#import "GPUImageBeautifyFilter.h"
 
 @interface GPUImageVideoCameraViewController ()
 
-@property (nonatomic, strong) UISwitch *rightSwitch;
-
 @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
 @property (nonatomic, strong) GPUImageView *videoPreview;
+
+@property (nonatomic, strong) UISwitch *beautiful;
 
 @end
 
@@ -34,61 +35,44 @@
     
     // 添加预览图层到源
     [videoCamera addTarget:videoPreview];
+    
+   
+    
     // 开始采集视频
     [videoCamera startCameraCapture];
     
-    [self.view addSubview:self.rightSwitch];
+    
+    
     self.videoCamera = videoCamera;
     self.videoPreview = videoPreview;
+    [self.view addSubview:self.beautiful];
 }
 
-- (UISwitch *)rightSwitch
+- (UISwitch *)beautiful
 {
-    if (!_rightSwitch)
+    if (!_beautiful)
     {
-        _rightSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.frame) - 50, 100, 30, 20)];
-        [_rightSwitch addTarget:self action:@selector(buttonOn:) forControlEvents:UIControlEventValueChanged];
+        _beautiful = [[UISwitch alloc] init];
+        [_beautiful sizeToFit];
+        _beautiful.center = CGPointMake(CGRectGetWidth(self.view.frame)/2, CGRectGetHeight(self.view.frame)/2);
+        [_beautiful addTarget:self action:@selector(change:) forControlEvents:UIControlEventValueChanged];
     }
-    return _rightSwitch;
+    return _beautiful;
 }
 
-- (void)buttonOn:(UISwitch *)rightSwitch
+- (void)change:(UISwitch *)sw
 {
-    if (rightSwitch.on)
+    if(sw.on)
     {
-
-        // 创建滤镜组
-        /**
-         原理：
-         1. filterGroup(addFilter) 滤镜组添加每个滤镜
-         2. 按添加顺序（可自行调整）前一个filter(addTarget) 添加后一个filter
-         3. filterGroup.initialFilters = @[第一个filter]];
-         4. filterGroup.terminalFilter = 最后一个filter;
-         
-         */
-        
-        GPUImageFilterGroup *groupFilter = [[GPUImageFilterGroup alloc] init];
-        // 磨皮滤镜
-        GPUImageBilateralFilter *bilateralFilter = [[GPUImageBilateralFilter alloc] init];
-        [groupFilter addFilter:bilateralFilter];
-        // 美白滤镜
-        GPUImageBrightnessFilter *brightnessFilter = [[GPUImageBrightnessFilter alloc] init];
-        [groupFilter addFilter:brightnessFilter];
-        
-        [bilateralFilter addTarget:brightnessFilter];
-        [groupFilter setInitialFilters:@[bilateralFilter]];
-        
-//         // 设置GPUImage响应链，从数据源 => 滤镜 => 最终界面效果
-//        [_videoCamera addTarget:groupFilter];
-//        [groupFilter addTarget:_videoPreview];
-//      //  [_videoCamera startCameraCapture];
+        [_videoCamera removeAllTargets];
+        GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
+        [_videoCamera addTarget:fiter];
+        [fiter addTarget:self.videoPreview];
     }
     else
     {
         [_videoCamera removeAllTargets];
-        [_videoCamera addTarget:_videoPreview];
+        [_videoCamera addTarget:self.videoPreview];
     }
 }
-
-
 @end
