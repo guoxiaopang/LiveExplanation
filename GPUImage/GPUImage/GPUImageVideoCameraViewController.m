@@ -27,7 +27,6 @@
     
     // 创建视频源
     GPUImageVideoCamera *videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPresetHigh cameraPosition:AVCaptureDevicePositionBack];
-    videoCamera.delegate = self;
     videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
     
     // 创建预览View
@@ -47,6 +46,8 @@
     self.videoCamera = videoCamera;
     self.videoPreview = videoPreview;
     [self.view addSubview:self.beautiful];
+    
+    //GPUImageMovieWriter *write = [GPUImageMovieWriter alloc] initWithMovieURL:<#(NSURL *)#> size:<#(CGSize)#>
 }
 
 - (UISwitch *)beautiful
