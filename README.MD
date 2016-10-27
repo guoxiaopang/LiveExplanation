@@ -1,7 +1,7 @@
-#这是一个提纲
+#直播总结
 
 ##1.这里我还没想好
-总之这里是要写点什么的。
+关于直播的技术文章不少，成体系的不多。我们将用这篇文章，更系统化地介绍当下大热的视频直播各环节的关键技术，帮助视频直播创业者们更全面、深入地了解视频直播技术，更好地技术选型。
 ###1.1 一个完整的直播APP原理
 `直播原理` : 把主播录制的视频，推流送到服务器，服务器经过处理(鉴黄等),通过CDN分发给观众看。
 
@@ -152,6 +152,9 @@ GPUImage采用链式方式来处理画面,通过addTarget:方法为链条添加�
 `source(视频，图片源) => filter(滤镜) => final target(处理后的视频、图片)`
 
 ###3.3 美颜原理
+`磨皮(GPUImageBilateralFilter)`：本质就是让像素点模糊，可以使用高斯模糊，但是可能导致边缘会不清晰，用双边滤波(Bilateral Filter) ，有针对性的模糊像素点，能保证边缘不被模糊。
+
+`美白(GPUImageBrightnessFilter)`：本质就是提高亮度。
 
 ###3.4 GPUImage源对象
 GPUImage的数据源只能是4类：
@@ -226,7 +229,7 @@ GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
 
 
 ###3.6 实例代码在这里
-[demo](这是一个demo地址)
+[demo](https://github.com/tiantianlan/LiveExplanation/tree/master/GPUImage)
 
 ##4. 音视频编码，解码
 这一章太难了，以后再写。
@@ -236,7 +239,7 @@ GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
 ##5. 流媒体服务器
 国内外有很多好用的流媒体服务区。这里为了方便搭建我们采用`nginx+RTMP`搭建流媒体服务器。
 ###5.1 MAC环境搭建
-[内容太多 跳转地址]()
+[内容太多 跳转地址](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83)
 ###5.2 Centos环境搭建
 [内容太多 跳转地址]()
 ###5.3 服务端常用技术
@@ -245,7 +248,7 @@ GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
 `负载均衡` 由多台服务器组成一个服务器集群，每次请求的时候，会根据服务器负载选择处理请求的服务器。
 ##6. 推流
 ###6.1 推流协议的选择
-[HLS和RTMP](aaaa)
+[HLS和RTMP](https://github.com/tiantianlan/LiveExplanation/blob/master/%E7%9B%B4%E6%92%AD%E5%8D%8F%E8%AE%AE%E7%9A%84%E9%80%89%E6%8B%A9.md)
 ###6.2 推流原理
 在iOS设备上进行各推流的话，是通过AVCaptureSession这么一个捕捉会话，指定两个AVCaptureDevice 也就是iOS的摄像头和麦克风，获取个原始视频和音频，然后需要进行个H.264的视频编码和AAC的音频编码，再将编码后的数据整合成一个音视频包，通过rmtp推送到nginx服务器
 
