@@ -121,7 +121,7 @@
 ![](捕获流程.png)
 
 ###2.6 Demo在这里
-代码 : [Demo](https://github.com/tiantianlan/LiveExplanation/tree/master/%E6%8D%95%E8%8E%B7%E9%9F%B3%E8%A7%86%E5%B1%8F)
+代码 : [捕获音视频Demo](https://github.com/tiantianlan/LiveExplanation/tree/master/%E6%8D%95%E8%8E%B7%E9%9F%B3%E8%A7%86%E5%B1%8F)
 
 ##3. GPUImage
 `前面好像没看懂，可以看这里吗？`
@@ -229,7 +229,7 @@ GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
 
 
 ###3.6 实例代码在这里
-[demo](https://github.com/tiantianlan/LiveExplanation/tree/master/GPUImage)
+[美颜的使用](https://github.com/tiantianlan/LiveExplanation/tree/master/GPUImage)
 
 ##4. 音视频编码，解码
 这一章太难了，以后再写。
@@ -239,9 +239,9 @@ GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
 ##5. 流媒体服务器
 国内外有很多好用的流媒体服务区。这里为了方便搭建我们采用`nginx+RTMP`搭建流媒体服务器。
 ###5.1 MAC环境搭建
-[内容太多 跳转地址](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83)
+[MAC搭建推流环境教程](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83.md)
 ###5.2 Centos环境搭建
-[内容太多 跳转地址](https://github.com/tiantianlan/LiveExplanation/blob/master/Centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
+[Centos搭建推流环境教程](https://github.com/tiantianlan/LiveExplanation/blob/master/Centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
 ###5.3 服务端常用技术
 `CDN` 直播数据上传到服务器后，观看直播的人比较多，服务器是承受不了的，会将数据分发到CDN，观众直接去CDN获取数据。减少服务器的负载。
 
@@ -279,7 +279,7 @@ AVPlayer视频播放使用步骤：
 >4. 创建`AVPlayerLayer`播放图层对象，添加到现实视图上去
 >5. 添加KVO监听。 监听到AVPlayerItemStatusReadyToPlay的时候调用play方法
 
-[DEMO在这里](https://github.com/tiantianlan/LiveExplanation/tree/master/AVPlayer)
+[AVPlayer的使用](https://github.com/tiantianlan/LiveExplanation/tree/master/AVPlayer)
 ###7.3 AVPlayerViewController
 `AVPlayerViewController`属于`AV Kit`,它是`UIViewController的子类`，用于展示并控制AVPlayer实例的播放。
 
@@ -288,7 +288,7 @@ AVPlayer视频播放使用步骤：
 >2. 创建AVPlayerViewController，并根据URL设置player属性
 >3. 调用play方法
 
-[DEMO在这里](https://github.com/tiantianlan/LiveExplanation/tree/master/AVKit) 
+[AVPlayerViewController的使用](https://github.com/tiantianlan/LiveExplanation/tree/master/AVKit) 
 
 Xcode8模拟器可能有问题，打开播放不了。
 ###8.开源框架
@@ -301,7 +301,7 @@ Xcode8模拟器可能有问题，打开播放不了。
 个人实验只需要配置Nginx+RTMP服务
 这里我采用这两个第三方框架写了一个直播，包含在线观看直播，和直播推流,支持在线美颜，前后摄像头切换等你需要:
 
->1. 搭建`Nginx+RTMP环境`:[MAC](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83) 或者  [Centos]()
+>1. 搭建`Nginx+RTMP环境`:[MAC](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83.md) 或者  [Centos](https://github.com/tiantianlan/LiveExplanation/blob/master/Centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
 >2. 下载项目真机运行。[https://github.com/tiantianlan/miaoboDemo](https://github.com/tiantianlan/miaoboDemo)
 登陆界面
 ![](miaobo1.png)
