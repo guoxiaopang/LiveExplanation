@@ -13,6 +13,9 @@
 		35244AA21DC1A4AC00D340B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35244AA01DC1A4AC00D340B2 /* Main.storyboard */; };
 		35244AA41DC1A4AC00D340B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35244AA31DC1A4AC00D340B2 /* Assets.xcassets */; };
 		35244AA71DC1A4AC00D340B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35244AA51DC1A4AC00D340B2 /* LaunchScreen.storyboard */; };
+		35244AB01DC1A52C00D340B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35244AAF1DC1A52C00D340B2 /* AVFoundation.framework */; };
+		35244AB51DC1AF8B00D340B2 /* 1.flv in Resources */ = {isa = PBXBuildFile; fileRef = 35244AB41DC1AF8B00D340B2 /* 1.flv */; };
+		35244AB71DC1B01900D340B2 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 35244AB61DC1B01900D340B2 /* 1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		35244AA31DC1A4AC00D340B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35244AA61DC1A4AC00D340B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35244AA81DC1A4AC00D340B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35244AAF1DC1A52C00D340B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		35244AB41DC1AF8B00D340B2 /* 1.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.flv; sourceTree = "<group>"; };
+		35244AB61DC1B01900D340B2 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35244AB01DC1A52C00D340B2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,7 @@
 			children = (
 				35244A961DC1A4AC00D340B2 /* AVPlayer */,
 				35244A951DC1A4AC00D340B2 /* Products */,
+				35244AAE1DC1A52C00D340B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +66,8 @@
 		35244A961DC1A4AC00D340B2 /* AVPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				35244AB41DC1AF8B00D340B2 /* 1.flv */,
+				35244AB61DC1B01900D340B2 /* 1.mp4 */,
 				35244A9A1DC1A4AC00D340B2 /* AppDelegate.h */,
 				35244A9B1DC1A4AC00D340B2 /* AppDelegate.m */,
 				35244A9D1DC1A4AC00D340B2 /* ViewController.h */,
@@ -77,6 +87,14 @@
 				35244A981DC1A4AC00D340B2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35244AAE1DC1A52C00D340B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35244AAF1DC1A52C00D340B2 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +156,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35244AB51DC1AF8B00D340B2 /* 1.flv in Resources */,
 				35244AA71DC1A4AC00D340B2 /* LaunchScreen.storyboard in Resources */,
+				35244AB71DC1B01900D340B2 /* 1.mp4 in Resources */,
 				35244AA41DC1A4AC00D340B2 /* Assets.xcassets in Resources */,
 				35244AA21DC1A4AC00D340B2 /* Main.storyboard in Resources */,
 			);
@@ -273,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K786QX52SJ;
 				INFOPLIST_FILE = AVPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianlan.AVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K786QX52SJ;
 				INFOPLIST_FILE = AVPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianlan.AVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
