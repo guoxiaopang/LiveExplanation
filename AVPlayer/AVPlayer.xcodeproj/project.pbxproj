@@ -293,7 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K786QX52SJ;
 				INFOPLIST_FILE = AVPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianlan.AVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K786QX52SJ;
 				INFOPLIST_FILE = AVPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianlan.AVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +332,7 @@
 				35244AAD1DC1A4AC00D340B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
