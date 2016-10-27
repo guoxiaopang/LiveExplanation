@@ -121,7 +121,7 @@
 ![](捕获流程.png)
 
 ###2.6 Demo在这里
-代码 : [Demo](www.qq.com)
+代码 : [Demo](https://github.com/tiantianlan/LiveExplanation/tree/master/%E6%8D%95%E8%8E%B7%E9%9F%B3%E8%A7%86%E5%B1%8F)
 
 ##3. GPUImage
 `前面好像没看懂，可以看这里吗？`
@@ -276,7 +276,7 @@ AVPlayer视频播放使用步骤：
 >4. 创建`AVPlayerLayer`播放图层对象，添加到现实视图上去
 >5. 添加KVO监听。 监听到AVPlayerItemStatusReadyToPlay的时候调用play方法
 
-
+[DEMO在这里](https://github.com/tiantianlan/LiveExplanation/tree/master/AVPlayer)
 ###7.3 AVPlayerViewController
 `AVPlayerViewController`属于`AV Kit`,它是`UIViewController的子类`，用于展示并控制AVPlayer实例的播放。
 
@@ -285,7 +285,7 @@ AVPlayer视频播放使用步骤：
 >2. 创建AVPlayerViewController，并根据URL设置player属性
 >3. 调用play方法
 
-[DEMO在这里](www.qq.com) 
+[DEMO在这里](https://github.com/tiantianlan/LiveExplanation/tree/master/AVKit) 
 
 Xcode8模拟器可能有问题，打开播放不了。
 ###8.开源框架
@@ -298,7 +298,7 @@ Xcode8模拟器可能有问题，打开播放不了。
 个人实验只需要配置Nginx+RTMP服务
 这里我采用这两个第三方框架写了一个直播，包含在线观看直播，和直播推流,支持在线美颜，前后摄像头切换等你需要:
 
->1. 搭建`Nginx+RTMP环境`:[MAC]() 或者  [Centos]()
+>1. 搭建`Nginx+RTMP环境`:[MAC](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83) 或者  [Centos]()
 >2. 下载项目真机运行。[https://github.com/tiantianlan/miaoboDemo](https://github.com/tiantianlan/miaoboDemo)
 登陆界面
 ![](miaobo1.png)
