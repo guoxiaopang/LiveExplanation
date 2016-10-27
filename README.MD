@@ -37,7 +37,7 @@
 
 ###2.2 捕获音视频步骤
 包含关系:
-![](AVCaptureSession.svg)
+![](AVCaptureSession.jpg)
 
 步骤:
 >1.  创建AVCaptureDevice(video或者audio)
