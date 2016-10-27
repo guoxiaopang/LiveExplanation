@@ -7,9 +7,9 @@
  
 安装命令：
 
-```` ``` ````
+<pre><code>
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```` ``` ````
+</code></pre>
 
 完成后检查版本`brew -v`,输出：
 
@@ -60,7 +60,7 @@ nginx安装所在位置：
 
 在配置文件最底部添加以下内容：
 
-```` ``` ````
+<pre><code>
 rtmp {
     server {
         listen 1935;
@@ -78,7 +78,7 @@ rtmp {
         }
     }
 }
-```` ``` ````
+</code></pre>
 
 配置完成后，重启nginx
 
