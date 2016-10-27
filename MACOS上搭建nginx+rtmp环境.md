@@ -12,9 +12,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ```
 完成后检查版本`brew -v`,输出：
 
-```Homebrew 1.0.7
-Homebrew/homebrew-core (git revision e6d9; last commit 2016-10-11)
-```
 ![](54167569.png)
 
 ##2.安装Nginx
@@ -62,7 +59,7 @@ nginx安装所在位置：
 
 在配置文件最底部添加以下内容：
 
-```
+`
 rtmp {
     server {
         listen 1935;
@@ -80,7 +77,7 @@ rtmp {
         }
     }
 }
-```
+`
 
 配置完成后，重启nginx
 
