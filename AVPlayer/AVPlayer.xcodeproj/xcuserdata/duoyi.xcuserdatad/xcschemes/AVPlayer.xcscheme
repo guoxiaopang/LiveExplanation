@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "351E04CF1DC0A4F400364AE6"
-               BuildableName = "AVKit.app"
-               BlueprintName = "AVKit"
-               ReferencedContainer = "container:AVKit.xcodeproj">
+               BlueprintIdentifier = "35244A931DC1A4AC00D340B2"
+               BuildableName = "AVPlayer.app"
+               BlueprintName = "AVPlayer"
+               ReferencedContainer = "container:AVPlayer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "351E04CF1DC0A4F400364AE6"
-            BuildableName = "AVKit.app"
-            BlueprintName = "AVKit"
-            ReferencedContainer = "container:AVKit.xcodeproj">
+            BlueprintIdentifier = "35244A931DC1A4AC00D340B2"
+            BuildableName = "AVPlayer.app"
+            BlueprintName = "AVPlayer"
+            ReferencedContainer = "container:AVPlayer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,19 +55,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "351E04CF1DC0A4F400364AE6"
-            BuildableName = "AVKit.app"
-            BlueprintName = "AVKit"
-            ReferencedContainer = "container:AVKit.xcodeproj">
+            BlueprintIdentifier = "35244A931DC1A4AC00D340B2"
+            BuildableName = "AVPlayer.app"
+            BlueprintName = "AVPlayer"
+            ReferencedContainer = "container:AVPlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -81,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "351E04CF1DC0A4F400364AE6"
-            BuildableName = "AVKit.app"
-            BlueprintName = "AVKit"
-            ReferencedContainer = "container:AVKit.xcodeproj">
+            BlueprintIdentifier = "35244A931DC1A4AC00D340B2"
+            BuildableName = "AVPlayer.app"
+            BlueprintName = "AVPlayer"
+            ReferencedContainer = "container:AVPlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

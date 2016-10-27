@@ -22,12 +22,18 @@
    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"1.mp4" ofType:nil];
   //  NSURL *urlStr = [NSURL URLWithString:@"rtmp://localhost:1935/rtmplive/room"];
-    NSURL *urlStr = [NSURL fileURLWithPath:path];
+   // NSURL *urlStr = [NSURL fileURLWithPath:path];
+    //NSURL *urlStr = [NSURL URLWithString:path];
+    NSURL *urlStr = [NSURL URLWithString:@"http://static.tripbe.com/videofiles/20121214/9533522808.f4v.mp4"];
     AVPlayerViewController *controller = [[AVPlayerViewController alloc] init];
     controller.view.frame = self.view.frame;
     controller.player = [AVPlayer playerWithURL:urlStr];
-    [self.view addSubview:controller.view];
     [controller.player play];
+    [self.view addSubview:controller.view];
+//    [self presentViewController:controller animated:YES completion:^{
+//         [controller.player play];
+//    }];
+   
 }
 
 

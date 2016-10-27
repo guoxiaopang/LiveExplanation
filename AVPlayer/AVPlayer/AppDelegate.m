@@ -1,14 +1,12 @@
 //
 //  AppDelegate.m
-//  AVKit
+//  AVPlayer
 //
-//  Created by duoyi on 16/10/26.
+//  Created by duoyi on 16/10/27.
 //  Copyright © 2016年 bt. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <AVKit/AVKit.h>
-#import <AVFoundation/AVFoundation.h>
 
 @interface AppDelegate ()
 
@@ -17,9 +15,8 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)
-launchOptions {
-
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
     return YES;
 }
 
