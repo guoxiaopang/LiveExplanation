@@ -315,3 +315,19 @@ Xcode8模拟器可能有问题，打开播放不了。
 
 
 
+
+
+参考文章：
+>1. [知乎 如何搭建一个完整的直播系统](https://www.zhihu.com/question/42162310)
+
+>2. [袁峥技术博客](http://www.jianshu.com/users/b09c3959ab3b/latest_articles)
+
+>3. [GPUImage 基于GPU加速的图形和视频处理库](http://www.ios122.com/2015/08/gpuimage/)
+>
+>4. [iOS中为直播APP集成美颜功能](http://news.h5.com.cn/ios/49696.html)
+>
+>5. [iOS视频直播~推流、拉流原理](http://www.jianshu.com/p/e516a5b31480)
+>
+>6. [关于视频直播技术，你想要知道的都在这里了](http://www.jianshu.com/p/ddb640ac4fec)
+>
+>7. [macOS上搭建Nginx+rtmp服务器](https://www.xsd.me/mac_nginx_rtmp_server.html)
