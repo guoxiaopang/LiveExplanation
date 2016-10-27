@@ -241,7 +241,7 @@ GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
 ###5.1 MAC环境搭建
 [内容太多 跳转地址](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83)
 ###5.2 Centos环境搭建
-[内容太多 跳转地址]()
+[内容太多 跳转地址](https://github.com/tiantianlan/LiveExplanation/blob/master/Centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
 ###5.3 服务端常用技术
 `CDN` 直播数据上传到服务器后，观看直播的人比较多，服务器是承受不了的，会将数据分发到CDN，观众直接去CDN获取数据。减少服务器的负载。
 
