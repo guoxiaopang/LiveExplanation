@@ -37,7 +37,7 @@
 
 ###2.2 捕获音视频步骤
 包含关系:
-![](AVCaptureSession.jpg)
+![](AVCaptureSession.png)
 
 步骤:
 >1.  创建AVCaptureDevice(video或者audio)
@@ -239,9 +239,9 @@ GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
 ##5. 流媒体服务器
 国内外有很多好用的流媒体服务区。这里为了方便搭建我们采用`nginx+RTMP`搭建流媒体服务器。
 ###5.1 MAC环境搭建
-[MAC搭建推流环境教程](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83.md)
+[MACOS上搭建nginx+rtmp环境](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83.md)
 ###5.2 Centos环境搭建
-[Centos搭建推流环境教程](https://github.com/tiantianlan/LiveExplanation/blob/master/Centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
+[Centos下搭建的nginx + RTMP环境](https://github.com/tiantianlan/LiveExplanation/blob/master/Centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
 ###5.3 服务端常用技术
 `CDN` 直播数据上传到服务器后，观看直播的人比较多，服务器是承受不了的，会将数据分发到CDN，观众直接去CDN获取数据。减少服务器的负载。
 
